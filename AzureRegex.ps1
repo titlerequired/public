@@ -7,10 +7,8 @@ param($Request, $TriggerMetadata)
 Write-Host "PowerShell HTTP trigger function processed a request."
 
 # Interact with query parameters or the body of the request.
-$name = $Request.query.name
 $regex = $Request.Query.Regex
 $rBody = $request.Body.json
-$sBody = $rBody
 Write-Host "Request Received"
 Write-Host "Regex Query: $regex"
 Write-Host "RBody JSON : $rbody"
